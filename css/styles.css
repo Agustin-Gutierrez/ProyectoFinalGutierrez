@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Estilo para el Body */
+body {
+  margin: 0%;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  /* Estilo para Index */
+}
+body .contenedor-inicio {
+  text-align: center;
+  background-color: #383838;
+  height: auto;
+}
+body .contenedor-inicio .row {
+  width: 100%;
+}
+body .contenedor-inicio .imagen-centrada {
+  display: block;
+  margin: 2% auto;
+  width: 60%;
+}
+body .contenedor-inicio .imagen-esquinas-redondeadas {
+  border-radius: 10px;
+}
+body .contenedor-inicio .contenedor-texto {
+  font-size: x-large;
+  color: #f0ffff;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 2%;
+}
+
+/* Estilo para el footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  height: 60px;
+  width: 100%;
+  /* Estilo para el contenido del footer */
+}
+footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body h1 {
+    font-size: 30px;
+  }
+  body p {
+    font-size: 12px;
+  }
+}
+
+.boton-enlace {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Cambiar estilos al pasar el ratón sobre el botón */
+.boton-enlace:hover {
+  background-color: #45a049;
+}
+
+.boton-enlace:disabled {
+  background-color: #cccccc; /* Gris */
+  color: #666666;
+  cursor: not-allowed;
+}
