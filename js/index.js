@@ -40,7 +40,7 @@ btnGuardar.addEventListener('click', function() {
 // Agregar evento de clic al botón de redireccionar
 btnRedireccionar.addEventListener('click', function() {
     // Redireccionar a otra página (puedes ajustar esto)
-    window.location.href = '../pages/eleccion.html';
+    window.location.href = '..//ProyectoFinalGutierrez/pages/eleccion.html';
 });
 
 
